@@ -463,7 +463,7 @@ slider.update({
 // RESET - reset slider to it's first values
 slider.reset();
 
-// DESTROY - destroys slider and restores original input field
+original
 slider.destroy();
 ```
 

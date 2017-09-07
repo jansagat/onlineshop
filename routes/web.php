@@ -24,3 +24,4 @@ Route::resource('/admin/category', 'Admin\CategoryController');
 Route::resource('/admin/post', 'Admin\PostController');
 Route::resource('/admin/product-category', 'Admin\ProductCategoryController');
 Route::resource('/admin/product', 'Admin\ProductController');
+Route::resource('/admin/photo', 'Admin\PhotoController');
