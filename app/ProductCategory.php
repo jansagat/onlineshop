@@ -25,4 +25,9 @@ class ProductCategory extends Model
             'content' => $request->content,
         ]);
     }
+
+    public function products()
+    {
+        return $this->belongsToMany(Product::class);
+    }
 }

@@ -23,4 +23,9 @@ class Product extends Model
             'ali_id' => $request->ali_id,
         ]);
     }
+
+    public function productCategories()
+    {
+        return $this->belongsToMany(ProductCategory::class);
+    }
 }
