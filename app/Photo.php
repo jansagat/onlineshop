@@ -53,4 +53,9 @@ class Photo extends Model
 
         Photo::destroy($photo->id);
     }
+
+    public function products()
+    {
+        return $this->belongsToMany(Product::class);
+    }
 }
