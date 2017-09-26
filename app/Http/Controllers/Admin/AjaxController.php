@@ -15,6 +15,10 @@ class AjaxController extends Controller
 
     public function getAliProducts(Request $request)
     {
+        $request->validate([
+            'key' => 'required'
+        ]);
+
         $aliexpress = new Aliexpress();
 
         $response = $aliexpress->getAliApiProducts($request->key);
