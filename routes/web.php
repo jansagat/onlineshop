@@ -25,3 +25,5 @@ Route::resource('/admin/post', 'Admin\PostController');
 Route::resource('/admin/product-category', 'Admin\ProductCategoryController');
 Route::resource('/admin/product', 'Admin\ProductController');
 Route::resource('/admin/photo', 'Admin\PhotoController');
+Route::resource('/admin/aliexpress', 'Admin\AliexpressController');
+Route::post('/admin/ajax/getaliproducts', 'Admin\AjaxController@getAliProducts');
